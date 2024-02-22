@@ -4,10 +4,15 @@ import './App.css'
 
 function App() {
   const [count, setCount] = useState(0);
+  const videoConstraints = {
+    width: 640,
+    height: 480,
+    facingMode: "environment"
+}
 
   return (
     <>
-      <Webcam height={600} width={600}/>
+      <Webcam videoConstraints={videoConstraints}/>
     </>
   )
 }
