@@ -5,8 +5,8 @@ import './App.css'
 function App() {
   const [count, setCount] = useState(0);
   const videoConstraints = {
-    width: 640,
-    height: 480,
+    width: 200,
+    height: 200,
     facingMode: "environment"
 }
 
